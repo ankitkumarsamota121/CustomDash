@@ -5,7 +5,7 @@ from dash.dependencies import Input, Output
 from web_app.app import app
 from web_app.apps import customer_dashboard, overall_dashboard
 
-sys.path.append(r"D:\Events\VIL Codefest\CustomDash")
+sys.path.append(r"E:\VIL Codefest\CustomDash")
 
 app.layout = html.Div([
     dcc.Location(id='url', refresh=False, pathname='/apps/customer_dashboard'),

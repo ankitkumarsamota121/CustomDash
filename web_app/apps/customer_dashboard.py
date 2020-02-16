@@ -8,7 +8,7 @@ from web_app.apps.helpers.helper_functions import get_extended_values, get_locat
 
 import pandas as pd
 
-df = pd.read_csv(r"D:\Events\VIL Codefest\CustomDash\web_app\appdata\sample_plotting.csv")
+df = pd.read_csv(r"E:\VIL Codefest\secret\frontend.csv")
 
 COLUMNS = list(df.columns)
 
@@ -52,7 +52,7 @@ def generate_arpu_graph(customer):
                 'duration': 1500
             },
             'yaxis': {
-                'range': [0, 1000]
+                'range': [0, 1200]
             },
         }
     }
@@ -106,7 +106,7 @@ def generate_service_usage_graph(customer):
                 'duration': 1500
             },
             'yaxis': {
-                'range': [0, 1000]
+                'range': [0, 1200]
             },
         }
     }
@@ -119,7 +119,7 @@ def generate_churn_probability(customer):
     )
 
 
-df = pd.read_csv(r"D:\Events\VIL Codefest\CustomDash\web_app\appdata\sample_plotting.csv")
+# df = pd.read_csv(r"D:\Events\VIL Codefest\CustomDash\web_app\appdata\sample_plotting.csv")
 
 layout = html.Div([
     html.Div([
