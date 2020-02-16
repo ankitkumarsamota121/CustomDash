@@ -5,8 +5,8 @@ import random
 from textblob import TextBlob
 import regex as re
 
-df = pd.read_csv(r"D:\Events\VIL Codefest\CustomDash\web_app\appdata\sample_plotting.csv")
-tweets_df = pd.read_csv(r"D:\Events\VIL Codefest\CustomDash\web_app\appdata\vodafoneidea_tweets.csv")
+df = pd.read_csv(r"E:\VIL Codefest\secret\frontend.csv")
+tweets_df = pd.read_csv(r"E:\VIL Codefest\CustomDash\web_app\appdata\vodafoneidea_tweets.csv")
 tweets = list(tweets_df['tweet'])
 
 

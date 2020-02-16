@@ -5,7 +5,7 @@ from web_app.app import app
 import pandas as pd
 from web_app.apps.helpers.helper_functions import get_tweets, get_polarity
 
-df = pd.read_csv(r"D:\Events\VIL Codefest\CustomDash\web_app\appdata\sample_plotting.csv")
+df = pd.read_csv(r"E:\VIL Codefest\secret\frontend.csv")
 
 COLUMNS = ['ARPU', 'Internet Usage', 'SMS Usage', 'Voice Usage']
 
@@ -47,10 +47,12 @@ def generate_scatter_plot(xaxis_column_name, yaxis_column_name,
             {
                 'x': df[xaxis_column_name].unique(),
                 'y': df[yaxis_column_name].unique(),
+                # 'x': df[xaxis_column_name],
+                # 'y': df[yaxis_column_name],
                 'mode': 'markers',
                 'marker': {
                     'color': COLORS['text'],
-                    'size': 10,
+                    'size': 5,
                 },
             },
         ],
@@ -62,8 +64,8 @@ def generate_scatter_plot(xaxis_column_name, yaxis_column_name,
                 'x': 0,
                 'y': 1.0
             },
-            'plot_bgcolor': COLORS['background'],
-            'paper_bgcolor': COLORS['background'],
+            'plot_bgcolor': COLORS['figure-background'],
+            'paper_bgcolor': COLORS['figure-background'],
             'font': {
                 'color': COLORS['text']
             },
@@ -107,8 +109,8 @@ def generate_bar_graph():
             #     'x': 0,
             #     'y': 1.0
             # },
-            'plot_bgcolor': COLORS['background'],
-            'paper_bgcolor': COLORS['background'],
+            'plot_bgcolor': COLORS['figure-background'],
+            'paper_bgcolor': COLORS['figure-background'],
             'font': {
                 'color': COLORS['text']
             },
